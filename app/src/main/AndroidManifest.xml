@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ewnbd.goh">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GOH">
+        <activity
+            android:name="com.ewnbd.goh.ui.activitiesDetails.ActivitiesDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.ewnbd.goh.ui.nearbyActivitys.NearByActivities"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.resetPassword.ResetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.forgotpassword.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.prefarence.PrefarenceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.verification.VerificationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.signup.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name="com.ewnbd.goh.ui.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ewnbd.goh.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar1" />
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.verification.VerificationActivity"
+    android:background="#F9F9F9"
+    android:padding="@dimen/_15sdp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/we_sent_you_a_code_to_verify_your_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_head_color"
+        android:textSize="@dimen/_15ssp"
+        android:textAlignment="center"
+        android:fontFamily="@font/axiforma_semi_bold"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        android:layout_marginTop="@dimen/_35sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSendNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeadTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sent to 050xxxxxxxx"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/axiforma_medium"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llSendNewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendNumberTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did’t get it? "
+            android:textColor="#67716A"
+            android:fontFamily="@font/axiforma_regular"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send a new code"
+            android:fontFamily="@font/axiforma_medium"
+            android:textColor="@color/colorPrimary"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llOtpCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llSendNewCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/green_border"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/green_border"
+            android:layout_marginStart="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/green_border"
+            android:layout_marginStart="@dimen/_20sdp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/green_border"
+            android:layout_marginStart="@dimen/_20sdp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_25sdp"
+        android:text="Verify"
+        android:gravity="center"
+        android:fontFamily="@font/axiforma_semi_bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/llOtpCode"
+        android:background="@drawable/curved_shape_btn_back_green"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

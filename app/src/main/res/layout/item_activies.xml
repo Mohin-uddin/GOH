@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivItemActiveImage"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:src="@drawable/active_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvActivesName"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActivesName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/axiforma_medium"
+            android:text="Bowling at Downtown Alley"
+            android:textColor="#080D15"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toStartOf="@+id/ivPremium"
+            app:layout_constraintStart_toEndOf="@id/ivItemActiveImage"
+            app:layout_constraintTop_toTopOf="@id/ivItemActiveImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPremium"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:src="@drawable/premimum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llCalender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tvActivesName"
+            app:layout_constraintTop_toBottomOf="@id/tvActivesName">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_calendar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center_vertical"
+                android:text="Sun, 3:30pm - 4:30 pm"
+                android:textColor="#4C4F4D"
+                android:textSize="@dimen/_9ssp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tvActivesName"
+            app:layout_constraintTop_toBottomOf="@id/llCalender">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_location" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center_vertical"
+                android:text="Eastern Housing, Dhaka"
+                android:textColor="#4C4F4D"
+                android:textSize="@dimen/_9ssp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvJoinRequest"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/curved_shape_btn_back_green"
+            android:fontFamily="@font/axiforma_medium"
+            android:gravity="center"
+            android:text="Join request"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/ivItemActiveImage"
+            app:layout_constraintEnd_toStartOf="@+id/ivUpload"
+            app:layout_constraintStart_toStartOf="@id/tvActivesName"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUpload"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/curved_shape_download"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_upload"
+            app:layout_constraintBottom_toBottomOf="@id/ivItemActiveImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvJoinRequest"
+            android:layout_marginStart="@dimen/_5sdp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/idExplore"
+        android:icon="@drawable/ic_explore"
+        android:title="@string/explore"/>
+    <item android:id="@+id/idActivities"
+        android:icon="@drawable/ic_activities"
+        android:title="@string/activities"/>
+    <item android:id="@+id/id"
+        android:title=""/>
+    <item android:id="@+id/idChat"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat"/>
+    <item android:id="@+id/idProfile"
+        android:icon="@drawable/ic_accounts"
+        android:title="@string/accounts"/>
+
+
+</menu>

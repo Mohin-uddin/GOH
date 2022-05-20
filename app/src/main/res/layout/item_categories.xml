@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCategoryBack"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:gravity="center"
+    android:background="@drawable/item_football_color"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCategory"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/football"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Football"
+        android:fontFamily="@font/axiforma_medium"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_5sdp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

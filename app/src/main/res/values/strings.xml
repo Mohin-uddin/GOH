@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GOH</string>
+    <string name="we_sent_you_a_code_to_verify_your_number">We sent you a code to \n verify your number</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the\n printing and typesetting industry.</string>
+    <string name="explore">Explore</string>
+    <string name="activities">Activities</string>
+    <string name="chat">Chat</string>
+    <string name="accounts">Accounts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sajol_ahmed">\u0040sajol__ahmed</string>
+    <string name="about">It is a long established fact that a reader will be distracted by the readable. More</string>
+</resources>

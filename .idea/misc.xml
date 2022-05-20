@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable-v24/curved_shape.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/circle_image.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/circle_image_border_black_white.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_activities_details_white.xml" value="0.214" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_btn_back_green.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_btn_back_white.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_download.xml" value="0.137" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_green.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_small_black.xml" value="0.229" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/curved_shape_white.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/green_border.xml" value="0.1905" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/ic_calendar.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_badminton_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_baseball_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_football_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_golf_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_spounsored.xml" value="0.214" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_squash_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/drawable/item_tennies_color.xml" value="0.194" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_activities_details.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_forgot_password.xml" value="0.24635416666666668" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_near_by_activities.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_prefarence.xml" value="0.264" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_reset_password.xml" value="0.24635416666666668" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_splash_screan.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/activity_verification.xml" value="0.24635416666666668" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/fragment_account.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/fragment_activities.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/fragment_explore.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/item_activies.xml" value="0.27447916666666666" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/item_categories.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/item_chat.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/item_dialuge_beef.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/layout/item_near_by_shop_category.xml" value="0.25" />
+        <entry key="..\:/SOFT/GOH/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
