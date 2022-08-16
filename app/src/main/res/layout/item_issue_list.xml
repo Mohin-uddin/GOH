@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/rbReportIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custome_radio"
+        android:fontFamily="@font/axiforma_medium"
+        android:textColor="#334A3B"
+        android:text="@string/service_was_not_good"
+        android:textSize="@dimen/_10ssp"
+        android:paddingLeft="@dimen/_5sdp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F6F6F6"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

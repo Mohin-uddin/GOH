@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civChatPerson"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/chat_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:text="William john"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/axiforma_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/civChatPerson"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@+id/civChatPerson"
+        android:textSize="@dimen/_12ssp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDetails"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:text="Friends since August 2017"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        android:maxLines="1"
+        android:fontFamily="@font/axiforma_regular"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAcceptRequest"
+        android:layout_width="@dimen/_58sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:background="@drawable/curved_shape_green"
+        android:text="@string/accept"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        android:fontFamily="@font/axiforma_medium"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivCancelRequest"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCancelRequest"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/close"
+        android:padding="@dimen/_6sdp"
+        android:background="@drawable/circle_grey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <item android:id="@+id/idExplore"
-        android:icon="@drawable/ic_explore"
+        android:icon="@drawable/home_page_select"
         android:title="@string/explore"/>
     <item android:id="@+id/idActivities"
-        android:icon="@drawable/ic_activities"
+        android:icon="@drawable/activity_slect"
         android:title="@string/activities"/>
     <item android:id="@+id/id"
         android:title=""/>
     <item android:id="@+id/idChat"
-        android:icon="@drawable/ic_chat"
+        android:icon="@drawable/chat_select"
         android:title="@string/chat"/>
     <item android:id="@+id/idProfile"
-        android:icon="@drawable/ic_accounts"
+        android:icon="@drawable/profile_select"
         android:title="@string/accounts"/>
 
 

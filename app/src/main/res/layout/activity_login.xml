@@ -9,25 +9,26 @@
     tools:context=".ui.login.LoginActivity"
     >
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/llLanguage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_22sdp"
             android:layout_margin="@dimen/_10sdp"
             android:background="@drawable/curved_shape"
             android:weightSum="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="end">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="EN"
-                android:fontFamily="@font/axiforma_bold"
+                android:fontFamily="@font/axiforma_semi_bold"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:textSize="@dimen/_8ssp"
                 android:textColor="@color/white"
                 android:background="@drawable/curved_shape_green"/>
             <androidx.appcompat.widget.AppCompatTextView
@@ -35,26 +36,33 @@
                 android:layout_height="match_parent"
                 android:text="AR"
                 android:gravity="center"
+                android:textSize="@dimen/_8ssp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/axiforma_bold"
+                android:fontFamily="@font/axiforma_semi_bold"
                 android:layout_weight="1"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_40sdp"
             android:src="@drawable/logo"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/llLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llWelCome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_10sdp">
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo">
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to,"
+                android:text="@string/welcome_to"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_22ssp"
                 android:fontFamily="@font/axiforma_light"
@@ -62,7 +70,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Goh"
+                android:text="@string/goh"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_22ssp"
                 android:fontFamily="@font/axiforma_bold"
@@ -70,15 +78,17 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llEmailMobileNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_50sdp"
             android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp">
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/llWelCome">
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login with Phone or Email "
+                android:text="@string/login_with_phone_or_email"
                 android:textColor="@color/text_head_color"
                 android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
@@ -89,23 +99,29 @@
                 android:text="(Optional)"
                 android:textColor="#C0D0C6"
                 android:textSize="@dimen/_11ssp"
+                android:visibility="invisible"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/ccEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:cardElevation="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/llEmailMobileNumber"
             app:cardCornerRadius="@dimen/_4sdp">
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etUserMobile"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@color/white"
                 android:hint="050XXXXXXX"
+                android:textColor="@color/text_color"
+                android:textColorHint="#5C7666"
                 android:fontFamily="@font/axiforma_medium"
                 android:textSize="@dimen/_10ssp"
                 android:paddingStart="@dimen/_10sdp"
@@ -113,41 +129,70 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPasswordTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="parent"
             android:textColor="@color/text_head_color"
             android:textSize="@dimen/_11ssp"
-            android:layout_marginTop="@dimen/_17sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ccEmail"
+            android:layout_marginTop="@dimen/_25sdp"
             android:fontFamily="@font/axiforma_medium"
             android:layout_marginStart="@dimen/_15sdp"
             />
         <androidx.cardview.widget.CardView
+            android:id="@+id/ccPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:cardElevation="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasswordTitle"
             app:cardCornerRadius="@dimen/_4sdp">
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@color/white"
                 android:hint="********"
+                android:textColor="@color/text_color"
+                android:textColorHint="#5C7666"
+                android:inputType="textPassword"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/axiforma_medium"
                 android:textSize="@dimen/_10ssp"
                 android:paddingStart="@dimen/_10sdp"
                 />
         </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/ivVHide"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/pass_hide"
+        app:layout_constraintTop_toTopOf="@id/ccPassword"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ccPassword"
+        app:layout_constraintEnd_toEndOf="@id/ccPassword"/>
+    <ImageView
+        android:id="@+id/ivPView"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_view"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/ccPassword"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ccPassword"
+        app:layout_constraintEnd_toEndOf="@id/ccPassword"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLogin"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_margin="@dimen/_15sdp"
-            android:text="Log In"
+            android:text="@string/log_in"
             android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ccPassword"
             android:fontFamily="@font/axiforma_semi_bold"
             android:textColor="@color/white"
             android:background="@drawable/curved_shape_btn_back_green"/>
@@ -155,28 +200,30 @@
             android:id="@+id/tvForgetPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password?"
-            android:textColor="@color/text_head_color"
+            android:text="@string/forget_password"
+            android:textColor="#334A3B"
             android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@id/tvLogin"
+            app:layout_constraintTop_toBottomOf="@id/tvLogin"
             android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:fontFamily="@font/axiforma_medium"
             />
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_70sdp"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgetPassword"
             android:gravity="center">
             <androidx.appcompat.widget.AppCompatTextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account?"
-                android:textColor="@color/text_head_color"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="#5C7666"
                 android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_regular"
                 android:layout_gravity="center_horizontal"/>
@@ -184,13 +231,13 @@
                 android:id="@+id/tvSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Sign Up"
+                android:text="@string/sign_up"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="@dimen/_220sdp"
         android:layout_height="@dimen/_120sdp"

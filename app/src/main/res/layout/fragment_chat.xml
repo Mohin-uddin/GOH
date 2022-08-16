@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragment.ChatFragment"
-    android:layout_margin="@dimen/_10sdp">
+    android:layout_margin="@dimen/_15sdp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/civPersonImage"
@@ -18,7 +18,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chat"
+        android:text="@string/chat"
         android:fontFamily="@font/axiforma_bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

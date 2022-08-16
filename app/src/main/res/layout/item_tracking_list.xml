@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrackHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I cant’ track my order"
+        android:fontFamily="@font/axiforma_semi_bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrackDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/axiforma_regular"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackHead"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:text="Lorem ipsum dolor sit amet,consectetur adipiscing elit. Orci consequat pharetra egestas amet, volutpat eu massa velit. Ultrices sed quam vitae morbi. Mi sdd sd egestas quam massa blandit maecenas felis. Purus pellentesque ornare porta ipsum integer."/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/curved_send_sms_shape_green"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackDetails"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/pending"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/axiforma_semi_bold"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 Jan, 2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/axiforma_regular"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintTop_toTopOf="@id/tvTrackHead"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

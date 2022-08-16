@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <androidx.appcompat.widget.LinearLayoutCompat
-
+        android:id="@+id/llPrefarence"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Let us know you"
+            android:text="@string/let_us_know_you"
             android:fontFamily="@font/axiforma_semi_bold"
             android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
@@ -33,17 +33,19 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Gender"
+            android:text="@string/select_gender"
             android:textColor="@color/text_head_color"
             android:fontFamily="@font/axiforma_medium"
             android:textSize="@dimen/_10ssp"
             android:layout_marginTop="@dimen/_10sdp"/>
         <androidx.appcompat.widget.LinearLayoutCompat
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="2"
-            android:layout_marginTop="@dimen/_5sdp">
+            android:layout_marginTop="@dimen/_10sdp">
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llMale"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_weight="1"
@@ -52,10 +54,12 @@
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:background="@drawable/curved_shape_btn_back_green">
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_man"/>
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMaleName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Male"
@@ -64,6 +68,7 @@
                     android:layout_marginTop="@dimen/_10sdp"/>
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llFemale"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_weight="1"
@@ -72,10 +77,12 @@
                 android:layout_marginStart="@dimen/_15sdp"
                 android:background="@drawable/curved_shape_btn_back_white">
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_woman"/>
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Female"
@@ -87,33 +94,36 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calender"
+            android:text="@string/date_of_birth"
             android:textColor="@color/text_head_color"
-            android:textSize="@dimen/_10ssp"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:fontFamily="@font/axiforma_medium"
             />
         <androidx.cardview.widget.CardView
+            android:id="@+id/cvDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:cardElevation="0dp"
             app:cardCornerRadius="@dimen/_5sdp">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@color/white"
                 android:orientation="horizontal"
                 >
-                <androidx.appcompat.widget.AppCompatEditText
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDateOfBirth"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@color/white"
-                    android:text="5 May,2022"
+                    android:hint="Select your birthday date"
+                    android:gravity="center_vertical"
                     android:textColor="@color/black"
                     android:paddingStart="@dimen/_7sdp"
                     android:fontFamily="@font/axiforma_medium"
-                    android:textSize="@dimen/_9ssp"
+                    android:textSize="@dimen/_10ssp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -137,33 +147,35 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="City/Area"
+            android:text="@string/city_area"
             android:textColor="@color/text_head_color"
-            android:textSize="@dimen/_10ssp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:fontFamily="@font/axiforma_medium"
             />
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:cardElevation="0dp"
             app:cardCornerRadius="@dimen/_5sdp">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@color/white"
                 android:orientation="horizontal"
                 >
-                <androidx.appcompat.widget.AppCompatEditText
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCityName"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@color/white"
-                    android:text="Cumilla,thakurpara"
+                    android:text=""
                     android:textColor="@color/black"
                     android:paddingStart="@dimen/_7sdp"
                     android:fontFamily="@font/axiforma_medium"
-                    android:textSize="@dimen/_9ssp"
+                    android:textSize="@dimen/_10ssp"
+                    android:gravity="center_vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -172,8 +184,8 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivCity"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_calendar"
+                    android:layout_height="@dimen/_17sdp"
+                    android:src="@drawable/ic_frame_location"
                     android:layout_gravity="center_vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -186,28 +198,29 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp">
+            android:layout_marginTop="@dimen/_15sdp">
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="About "
+                android:text="@string/about_title"
                 android:textColor="@color/text_head_color"
-                android:textSize="@dimen/_10ssp"
+                android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Optional)"
+                android:text="@string/optional"
                 android:textColor="#C0D0C6"
-                android:textSize="@dimen/_10ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:cardElevation="0dp"
             app:cardCornerRadius="@dimen/_4sdp">
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -217,10 +230,11 @@
                 android:orientation="horizontal"
                 >
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tvAboutText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/white"
-                    android:hint="Type about"
+                    android:hint="@string/type_about"
                     android:gravity="top"
                     android:textColor="@color/black"
                     android:padding="@dimen/_7sdp"
@@ -237,33 +251,37 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp">
+            android:layout_marginTop="@dimen/_15sdp">
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Interests "
+                android:text="@string/interests"
                 android:textColor="@color/text_head_color"
-                android:textSize="@dimen/_10ssp"
+                android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Optional)"
+                android:text="@string/optional"
                 android:textColor="#C0D0C6"
-                android:textSize="@dimen/_10ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_11ssp"
                 android:fontFamily="@font/axiforma_medium"
                 android:layout_gravity="center_horizontal"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInterest"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"/>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNextData"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:layout_margin="@dimen/_15sdp"
-            android:text="Next"
+            android:text="@string/next"
             android:gravity="center"
             android:fontFamily="@font/axiforma_semi_bold"
             android:textColor="@color/white"

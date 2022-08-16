@@ -11,26 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNearTitle"
         android:src="@drawable/ic_arrow_left"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"/>
+        app:layout_constraintBottom_toBottomOf="@+id/tvNearTitle"/>
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNearTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Near by activies"
+        android:text="@string/near_by_activities"
         android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:fontFamily="@font/axiforma_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivNearByBackBack"/>
+        app:layout_constraintTop_toTopOf="parent"/>
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFilter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_filter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/tvNearTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNearTitle"
         />
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"

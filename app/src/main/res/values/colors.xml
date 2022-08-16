@@ -14,4 +14,8 @@
     <color name="text_head_color">#253E2F</color>
     <color name="background_color">#F9F9F9</color>
     <color name="grey">#B1B7B3</color>
+    <color name="star_color">#FFF8EB</color>
+    <color name="slider_color">#41B06B</color>
+    <color name="text_color">#40B06A</color>
+    <color name="red">#ED4747</color>
 </resources>

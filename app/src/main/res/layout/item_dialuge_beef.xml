@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:id="@+id/ivLoader"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
 
 

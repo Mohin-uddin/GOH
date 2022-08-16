@@ -55,6 +55,7 @@
             android:textColor="#67716A"
             android:fontFamily="@font/axiforma_regular"/>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReSendOtp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send a new code"
@@ -73,27 +74,36 @@
         android:layout_marginTop="@dimen/_15sdp">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="@dimen/_35sdp"
-            android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/green_border"/>
-        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFirstCode"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/green_border"
-            android:layout_marginStart="@dimen/_20sdp"/>
+            android:gravity="center"/>
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSecondCode"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/green_border"
-            android:layout_marginStart="@dimen/_20sdp"/>
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"/>
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etThirdCode"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/green_border"
-            android:layout_marginStart="@dimen/_20sdp"/>
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFourthCode"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/green_border"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVerify"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
         android:layout_margin="@dimen/_25sdp"

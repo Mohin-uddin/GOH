@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cIvFriendChat"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/not_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFriendChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_back_white"
+        android:text="I am boy"
+        android:gravity="center"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/axiforma_regular"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/cIvFriendChat"
+        app:layout_constraintStart_toEndOf="@id/cIvFriendChat"
+        android:paddingStart="@dimen/_22sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMyChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/chat_back"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_22sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/axiforma_regular"
+        android:textColor="@color/white"
+        android:text="Hi John! I’m fine and you?"
+        android:paddingBottom="@dimen/_7sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

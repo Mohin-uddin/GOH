@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,14 +11,16 @@
         android:id="@+id/tvHeadOfAccounts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accounts"
+        android:text="@string/accounts"
         android:textColor="@color/black"
-        android:fontFamily="@font/axiforma_semi_bold"
+        android:fontFamily="@font/axiforma_bold"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/_20sdp"/>
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSignOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_logout"
@@ -33,7 +36,7 @@
         android:layout_height="@dimen/_55sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/profile_pic"
+        android:src="@drawable/ic_baseline_person"
         android:layout_marginTop="@dimen/_15sdp"
         app:layout_constraintTop_toBottomOf="@+id/tvHeadOfAccounts"/>
 
@@ -41,7 +44,7 @@
         android:id="@+id/tvPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sajol Ahmed"
+        android:text=""
         android:fontFamily="@font/axiforma_bold"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/civProfilePic"
@@ -56,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPersonName"
-        android:text="@string/sajol_ahmed"
+        android:text=""
         android:textSize="@dimen/_10ssp"
         android:fontFamily="@font/axiforma_regular"/>
     <View
@@ -66,7 +69,7 @@
         android:background="#F3F3F3"
         app:layout_constraintTop_toBottomOf="@+id/tvAccountEmail"
         android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_20sdp"/>
+        android:layout_marginTop="@dimen/_25sdp"/>
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,12 +77,13 @@
         app:layout_constraintTop_toBottomOf="@+id/vLine"
         android:layout_marginStart="@dimen/_30sdp">
        <androidx.appcompat.widget.LinearLayoutCompat
+           android:id="@+id/llProfile"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:weightSum="10"
            android:orientation="horizontal"
            android:gravity="center_vertical"
-           android:layout_marginTop="@dimen/_20sdp">
+           android:layout_marginTop="@dimen/_25sdp">
            <androidx.appcompat.widget.AppCompatImageView
                android:layout_width="0dp"
                android:layout_height="wrap_content"
@@ -88,7 +92,7 @@
            <androidx.appcompat.widget.AppCompatTextView
                android:layout_width="0dp"
                android:layout_height="wrap_content"
-               android:text="Profile"
+               android:text="@string/profile"
                android:layout_marginStart="@dimen/_5sdp"
                android:layout_weight="8"
                android:textColor="@color/black"
@@ -102,12 +106,13 @@
                android:background="@drawable/curved_shape_small_black"/>
        </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFriends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_18sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -116,7 +121,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Friends"
+                android:text="@string/friends"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"
@@ -135,7 +140,7 @@
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_18sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -144,7 +149,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Language"
+                android:text="@string/language"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"
@@ -180,12 +185,13 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llPasswordChange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_18sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -194,7 +200,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Password Change"
+                android:text="@string/password_change"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"
@@ -213,14 +219,15 @@
             android:layout_height="1dp"
             android:background="#F3F3F3"
             app:layout_constraintTop_toBottomOf="@+id/tvAccountEmail"
-            android:layout_marginTop="@dimen/_20sdp"/>
+            android:layout_marginTop="@dimen/_25sdp"/>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llReportOnIssue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_20sdp">
+            android:layout_marginTop="@dimen/_25sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -229,7 +236,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Report an Issue"
+                android:text="@string/report_an_issue"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"
@@ -243,12 +250,13 @@
                 android:background="@drawable/curved_shape_small_black"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llPrivacyPolicy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_18sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -257,7 +265,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Privacy Policy"
+                android:text="@string/privacy_policy"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"
@@ -271,12 +279,13 @@
                 android:background="@drawable/curved_shape_small_black"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llTearmsAndCondition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_marginTop="@dimen/_18sdp">
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -285,7 +294,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Terms &amp; Condition"
+                android:text="@string/terms_amp_conditions"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="8"
                 android:textColor="@color/black"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_7sdp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civFriendSharePerson"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/chat_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShareName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="William john"
+        android:textColor="@color/black"
+        android:fontFamily="@font/axiforma_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/civFriendSharePerson"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@+id/civFriendSharePerson"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@id/civFriendSharePerson"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="SEND"
+        android:textColor="@color/colorGreen"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:background="@drawable/curved_shape"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

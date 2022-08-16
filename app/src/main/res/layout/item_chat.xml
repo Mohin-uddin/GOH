@@ -10,22 +10,21 @@
         android:id="@+id/civChatPerson"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/chat_person"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
         />
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvNotifcatiNumber"
-        android:layout_width="@dimen/_9sdp"
-        android:layout_height="@dimen/_9sdp"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_8sdp"
         app:layout_constraintTop_toTopOf="@+id/civChatPerson"
-        android:text="0"
         android:textColor="@color/white"
         android:textSize="@dimen/_5sdp"
         android:textAlignment="center"
         android:gravity="center"
-        android:background="@drawable/circle_image"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/circle_online"
         app:layout_constraintEnd_toEndOf="@+id/civChatPerson"
         />
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -44,6 +43,7 @@
             android:textColor="@color/black"
             android:fontFamily="@font/axiforma_bold"/>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLastSms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello! how are you"
@@ -51,10 +51,25 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChatTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Now"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/civChatPerson"
-        app:layout_constraintBottom_toBottomOf="@id/civChatPerson" />
+        app:layout_constraintBottom_toTopOf="@+id/tvCountSms"
+         />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountSms"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:background="@drawable/circle_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text = "3"
+        android:gravity="center"
+        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvChatTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvChatTime"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

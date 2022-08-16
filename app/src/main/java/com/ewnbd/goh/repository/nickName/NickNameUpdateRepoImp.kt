@@ -1,0 +1,32 @@
+package com.ewnbd.goh.repository.nickName
+
+import android.util.Log
+import com.ewnbd.goh.data.model.response_all_class.NickNameUpdate
+import com.ewnbd.goh.data.remote.ApiInterface
+import com.ewnbd.goh.utils.Resource
+import retrofit2.HttpException
+import java.io.IOException
+import javax.inject.Inject
+
+class NickNameUpdateRepoImp @Inject constructor(
+    private val api: ApiInterface
+) : NickNameUpdateRepository{
+    override suspend fun updateNameRepo(
+        header: Map<String, String>,
+        nickNameUpdate: NickNameUpdate
+    ): Resource<NickNameUpdate> {
+        val response = try {
+            api.nickNameUpdate(header,nickNameUpdate)
+        }catch (ioExeption: IOException){
+            Log.e("CheckCall", "loginResponse: $ioExeption" )
+            return Resource.Error(ioExeption.toString())
+
+        }
+        catch (e: HttpException){
+            Log.e("CheckCall", "loginResponse hlw: "+e.response().toString()+"  asdad "+e.code())
+            return Resource.Error(""+e.code())
+        }
+        Log.e("CheckCall", "loginResponse: ")
+        return Resource.Success(response)
+    }
+}

@@ -20,18 +20,20 @@
         android:layout_gravity="end">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrganization"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Organized"
+            android:text="@string/organized"
             android:fontFamily="@font/axiforma_bold"
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="@color/white"
             android:background="@drawable/curved_shape_green"/>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvParticipated"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Participated"
+            android:text="@string/participated"
             android:gravity="center"
             android:textColor="#5C7666"
             android:fontFamily="@font/axiforma_bold"

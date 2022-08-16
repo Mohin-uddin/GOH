@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vLineHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_view_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civChatPerson"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLineHead"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="@font/axiforma_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/civChatPerson"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@+id/civChatPerson"
+        android:textSize="@dimen/_14ssp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDetailsRatingPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/axiforma_regular"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llRatingPersonDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_shape"
+        android:gravity="center"
+        android:paddingStart="@dimen/_7sdp"
+        android:paddingEnd="@dimen/_7sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailsRatingPerson"
+        app:layout_constraintStart_toStartOf="@+id/tvDetailsRatingPerson"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="4.5"
+            android:fontFamily="@font/axiforma_medium"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/ic_star"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/llRatingPersonDetails"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/llRatingPersonDetails"
+        app:layout_constraintStart_toStartOf="@+id/civChatPerson"
+        android:text="Send to Friends "
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/axiforma_bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriendList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

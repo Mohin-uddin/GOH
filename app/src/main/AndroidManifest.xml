@@ -2,46 +2,171 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ewnbd.goh">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".GOHApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GOH">
+        android:theme="@style/Theme.GOH"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name="com.ewnbd.goh.ui.activitiesDetails.ActivitiesDetails"
-            android:exported="false" />
+            android:name=".ui.ratingactivity.RatingActivityPerson"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1"/>
         <activity
-            android:name="com.ewnbd.goh.ui.nearbyActivitys.NearByActivities"
+            android:name=".ui.selectLocation.SelectLocationActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.resetPassword.ResetPasswordActivity"
+            android:name=".ui.organizationDetails.OrganizationRequestActivty"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.forgotpassword.ForgotPasswordActivity"
+            android:name=".ui.organizationDetails.OrganizationParticepetorActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.prefarence.PrefarenceActivity"
+            android:name=".ui.friendProfile.FriendProfileActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.verification.VerificationActivity"
+            android:name=".ui.organizationDetails.OrganizationDetailsActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.signup.SignUpActivity"
+            android:name=".ui.forgotpassword.ForgetPasswordOtpActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.login.LoginActivity"
+            android:name=".ui.nearbyActivitys.CategoryWiseActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar1" />
         <activity
-            android:name="com.ewnbd.goh.ui.SplashScreenActivity"
+            android:name=".ui.editeProfile.EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.location.LocationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.friends.AllFriendListActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.friends.FriendsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.createActivity.CreateActivityReview"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.activitiesDetails.ActivitiesDetails"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.createActivity.CreateActivityGenderSelectionPageActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.createActivity.CreateActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.filter.FilterResultActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.filter.FilterActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.promotion.PromoteActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.rating.RatingActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.notification.NotificationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.termsCondition.TearmsAndCondition"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.privecy_policy.PrivecyPolicyActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.trackIssue.TrackIssueActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.chatDetails.ChatDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.reportIssue.ReportIssueActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.changePassword.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.nearbyActivitys.NearByActivities"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.resetPassword.ResetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.forgotpassword.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.prefarence.PrefarenceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.verification.VerificationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.signup.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar1" />
+        <activity
+            android:name=".ui.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar1">
             <intent-filter>
@@ -51,7 +176,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ewnbd.goh.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar1" />
     </application>

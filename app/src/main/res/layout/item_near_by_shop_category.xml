@@ -15,6 +15,7 @@
         android:paddingBottom="@dimen/_7sdp"
         android:gravity="center"
         android:text="All"
+        android:layout_marginEnd="@dimen/_5sdp"
         android:textSize="@dimen/_12sdp"
         android:textColor="@color/black"
         android:fontFamily="@font/axiforma_semi_bold"

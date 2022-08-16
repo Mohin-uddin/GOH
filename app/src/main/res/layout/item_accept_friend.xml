@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_7sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:background="@drawable/curved_shape_grey">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tvCancelRequest"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_8sdp"
+        android:src="@drawable/close"
+        android:layout_gravity="end"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivRequestPersonPic"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/person_imag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRequestPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John doe"
+        android:fontFamily="@font/axiforma_semi_bold"
+        android:textColor="@color/black"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAcceptMember"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/curved_shape_btn_back_green"
+        android:text="@string/accept"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_9ssp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/axiforma_medium"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/bottom_sheet_top_curb">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/vLineHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_view_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUpdateActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_activity"
+            android:textColor="#334A3B"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/axiforma_medium"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvViewParticipate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_participants"
+            android:textColor="#334A3B"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/axiforma_medium"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
